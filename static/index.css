@@ -1,0 +1,311 @@
+/*
+    L        A     SSSS   EEEEE   RRR     DD    EEEEE   SSSS   IIIII     GG     N   N     IIIII     OO
+    L       A A    S      E       R  R    D D   E       S        I      G  G    NN  N       I      O  O
+    L      AAAAA    SS    EEE     RRR     D D   EEE      SS      I      G       N NNN       I      O  O
+    L     A     A     S   E       R  R    D D   E          S     I      G GG    N  NN       I      O  O
+    LLLL A       A SSSS   EEEEE   R   R   DD    EEEEE   SSSS   IIIII     GG     N   N  O  IIIII     OO
+*/
+
+/*Copyright 2023*/
+/*For questions contact derek@laserdesign.io*/
+
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Work Sans', sans-serif;*/
+/*font-family: "Open Sans Condensed", sans-serif;*/
+/*font-family: 'Inconsolata', monospace;*/
+/*font-family: 'Prata', serif;*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&family=Open+Sans+Condensed&family=Inconsolata:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+:root {
+  --white: #ffffff;
+  --light-gray: #dcdcdc;
+  --light: #ced8d8;
+  --gray: #939598;
+  --dark-gray: #3a3a3a;
+  --teal: #1ba9a7;
+  --purple: #700aa4;
+  --black: #000000;
+  --backlight: linear-gradient(135deg, var(--white), var(--light-gray), var(--light));
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--backlight) no-repeat;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--light-gray);
+  height: 60px;
+  border-top: 1px solid var(--black);
+  padding-left: 1vw;
+}
+
+main {
+  padding: 5vw;
+  font-family: 'Prata', serif;
+  font-size: 1.21em;
+}
+
+hr {
+  border: solid 1px var(--dark-gray);
+}
+
+.wrapper {
+  height: auto;
+}
+
+.wrapper #navbar li {
+  white-space: nowrap;
+}
+
+.contact-wrapper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.contact-box {
+  margin: 15vh 10vw 15vh 10vw;
+  width: 80vw;
+  height: auto;
+  text-align: center;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+}
+
+#input {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+#contact-heading-font {
+  font-family: 'Inconsolata', monospace;
+  text-align: center; 
+  font-size: 50px;
+  color: var(--dark-gray);
+}
+
+#name-label {
+  margin: 1vw;
+}
+#dropdown {
+  margin: 1vw;
+}
+#email-label {
+  margin: 1vw;
+}
+#number-label {
+  margin: 1vw;
+}
+#emptybox {
+  margin: 1vw;
+}
+button[type=submit] {
+  width: 6em;
+  height: 2.5em;
+  margin: 0 auto 3em auto;
+  text-align: center;
+  background-color: var(--teal);
+  
+} 
+
+#sub-div {
+  text-align: center;
+  max-width: 100%;
+  
+  
+}
+
+#navbar {
+    background-color: var(--dark-gray);
+    display: flex;
+    top: 0;
+    opacity: 75%;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    width: 100%;
+    max-height: 25vh;
+    padding-left: 1vw;
+}
+
+  #navbar > ul > li {
+    display: inline;
+    margin: 2vw;
+    white-space: nowrap;
+}
+  
+  #navbar > ul > li > a {
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid var(--dark-gray)
+}
+
+#navbar > ul > li > a:hover {
+    border: 2px solid var(--purple);
+}
+
+#welcome-section {
+  text-align: center;
+  height: 65vh;
+  width: auto;
+  align-items: center;
+  margin: 6em;
+  border: 1px solid black;
+}
+
+#frame {
+  display: block;
+  height: 55vh;
+  width: 50%;
+  margin: 25%;
+}
+.line {
+  font-size: 5em;
+  display: none;
+}
+
+
+.project-tile {
+  background: var(--light);
+  padding-top: 1.5vw;
+  /* padding-bottom: 70px; */
+  width: 30vw;
+  height: 30vw;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5em;
+}
+
+#showcase {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+  height: auto;
+  padding: 5%;
+}
+#gallery {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto; 
+  height: auto;
+  padding: 5%;
+}
+#gallery-heading {
+  margin-top: 25vh;
+  font-size: 2.5em;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #gallery {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+  }
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+  }
+  .wrapper .contact-wrapper #navbar {
+    float: left;
+    width: 100%;
+    
+  }
+  .wrapper .contact-wrapper .contact-box {
+    float: center;
+  }
+}  
+@media only screen and (max-width: 600px) {
+  #welcome-section {
+    text-align: center;
+    height: 45vh;
+    width: auto;
+    align-items: center;
+    margin: 6em;
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  #welcome-section {
+    text-align: center;
+    height: 35vh;
+    width: auto;
+    align-items: center;
+    margin: 6em;
+    border: 1px solid black;
+  }
+  #gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .project-tile {
+
+  padding: 0;
+  margin-bottom: 5vh;
+  width: 60vw;
+  height: 60vw;
+  text-align: center;
+  font-weight: bold;
+  
+  }
+  #input {
+    display: flex;
+    flex-direction: column;
+  }
+  .line {
+    font-size: 2.4em;
+    display: none;
+  }
+}
+
+
+
+#pic-div {
+  text-align: center;
+  border-radius: 3px;
+
+}
+
+
+
+
+
