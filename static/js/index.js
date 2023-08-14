@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", () => {
   let currentLine = 0;
   const lines = document.querySelectorAll('.line');
@@ -13,3 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   showNextLine();
 });
+
+
+
+
+// document.getElementById("fade-in1").addEventListener("DOMContentLoaded", )
+
+

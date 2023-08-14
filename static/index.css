@@ -9,15 +9,8 @@
 /*Copyright 2023*/
 /*For questions contact derek@laserdesign.io*/
 
-/*font-family: 'Montserrat', sans-serif;*/
-/*font-family: 'Work Sans', sans-serif;*/
-/*font-family: "Open Sans Condensed", sans-serif;*/
-/*font-family: 'Inconsolata', monospace;*/
-/*font-family: 'Prata', serif;*/
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&family=Open+Sans+Condensed&family=Inconsolata:wght@600&https://fonts.googleapis.com/css2?family=Oswald:wght@300&fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&family=Open+Sans+Condensed&family=Inconsolata:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 :root {
   --white: #ffffff;
   --light-gray: #dcdcdc;
@@ -194,7 +187,6 @@ button[type=submit] {
 .project-tile {
   background: var(--light);
   padding-top: 1.5vw;
-  /* padding-bottom: 70px; */
   width: 30vw;
   height: 30vw;
   text-align: center;
@@ -303,9 +295,164 @@ button[type=submit] {
   text-align: center;
   border-radius: 3px;
 
+} */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&family=Open+Sans+Condensed&family=Inconsolata:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+:root {
+  --white: #ffffff;
+  --light-gray: #dcdcdc;
+  --light: #ced8d8;
+  --gray: #939598;
+  --dark-gray: #3a3a3a;
+  --teal: #1ba9a7;
+  --purple: #700aa4;
+  --black: #000000;
+  --gold: #F4EB19; 
+  /* --yellow: #F7F02D; */
+  --yellow: #F9F8D9; 
+  --backlight: linear-gradient(135deg, var(--white), var(--yellow), var(--white));
 }
 
+@media (max-width: 480px) {
+  html {
+    margin: 0;
+    padding: 0;
+    background: var(--backlight) no-repeat;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  main > p > a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  main > p > a:hover {
+    color: #700aa4;
+  }
+  summary {
+    padding-bottom: 70px;
+  }
+  #navbar {
+    background-color: var(--dark-gray);
+    display: flex;
+    top: 0;
+    opacity: 83%;
+    /* flex-direction: row;
+    justify-content: stretch; */
+    /* align-items: center; */
+    font-size: 3.9vw;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    width: 100%;
+    /* max-height: 25vh; */
+    padding-left: 1vw;
+  }
 
+  #navbar > ul {
+    width: 100%;
+    list-style: none;
+    text-align: right;
+    padding-right: 10vw;
+  }
+
+  #navbar > ul > li {
+    margin: 0;
+  }
+  
+  #navbar > ul > li > a {
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid var(--dark-gray)
+  }
+
+  #navbar > ul > li > a:hover {
+      border: 2px solid var(--purple);
+  }
+  #welcome-section {
+    text-align: center;
+    height: 30vh;
+    width: auto;
+    align-items: center;
+    margin: 6vw;
+  }
+  #frame {
+    text-align: center;
+    height: 34vh;
+    width: 85vw;
+    align-items: center;
+    /* margin: 5% 20% 5%; */
+
+    /* text-align: center;
+    display: block;
+    height: 55vh;
+    width: 50%;
+    /* margin: 25%; */
+    /* margin: 5% 15% 5% 15%;
+    align-items: center;
+    border: 1px solid black; */
+  }
+  .line {
+    font-size: 1em;
+    display: none;
+    font-family: 'Oswald', sans-serif;
+  }
+  .wrapper {
+    min-width: calc(100% - 60px);
+
+    text-align: center;
+    padding-top: 20vh;
+
+    flex: 1;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    height: 20%;
+    border-top: 1px solid var(--black);
+    padding-left: 1vw;
+    width: 100%;
+    opacity: 83%;
+    font-size: 3.9vw;
+    height: 60px;
+
+    position: fixed;
+    bottom: 0;
+
+  }
+
+  
+}
+@media (min-width: 481px) {
+  
+}
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 1200px) {
+  
+}
+@media (min-width: 1920px) {
+  
+}
+@media (max-width: 480px) {
+  
+}
+@media (max-width: 480px) {
+  
+}
 
 
 
