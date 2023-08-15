@@ -299,6 +299,7 @@ button[type=submit] {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&family=Open+Sans+Condensed&family=Inconsolata:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
 :root {
   --white: #ffffff;
   --light-gray: #dcdcdc;
@@ -341,16 +342,14 @@ button[type=submit] {
     background-color: var(--dark-gray);
     display: flex;
     top: 0;
-    opacity: 83%;
-    /* flex-direction: row;
-    justify-content: stretch; */
-    /* align-items: center; */
+    opacity: 85%;
     font-size: 3.9vw;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     width: 100%;
-    /* max-height: 25vh; */
     padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
   }
 
   #navbar > ul {
@@ -358,6 +357,7 @@ button[type=submit] {
     list-style: none;
     text-align: right;
     padding-right: 10vw;
+    padding-bottom: 0;
   }
 
   #navbar > ul > li {
@@ -385,16 +385,6 @@ button[type=submit] {
     height: 34vh;
     width: 85vw;
     align-items: center;
-    /* margin: 5% 20% 5%; */
-
-    /* text-align: center;
-    display: block;
-    height: 55vh;
-    width: 50%;
-    /* margin: 25%; */
-    /* margin: 5% 15% 5% 15%;
-    align-items: center;
-    border: 1px solid black; */
   }
   .line {
     font-size: 1em;
@@ -403,10 +393,8 @@ button[type=submit] {
   }
   .wrapper {
     min-width: calc(100% - 60px);
-
     text-align: center;
     padding-top: 20vh;
-
     flex: 1;
   }
   .footer {
@@ -421,38 +409,135 @@ button[type=submit] {
     border-top: 1px solid var(--black);
     padding-left: 1vw;
     width: 100%;
-    opacity: 83%;
+    opacity: 85%;
     font-size: 3.9vw;
     height: 60px;
-
     position: fixed;
     bottom: 0;
 
   }
 
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    margin: 0;
+    padding: 0;
+    background: var(--backlight) no-repeat;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+  }
+  main > p > a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  main > p > a:hover {
+    color: #700aa4;
+  }
+  summary {
+    padding-bottom: 70px;
+  }
+  #navbar {
+    background-color: var(--dark-gray);
+    display: flex;
+    top: 0;
+    opacity: 85%;
+    font-size: 3.9vw;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    width: 100%;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+
+  #navbar > ul > li {
+    display: inline;
+    margin: 2vw;
+    white-space: nowrap;
+  }
+  
+  #navbar > ul > li > a {
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid var(--dark-gray)
+  }
+
+  #navbar > ul > li > a:hover {
+      border: 2px solid var(--purple);
+  }
+  #welcome-section {
+    text-align: center;
+    height: 57vh;
+    width: auto;
+    align-items: center;
+    margin: 3vw;
+    border: 2px solid black;
+  }
+  #frame {
+    text-align: center;
+    height: 90vh;
+    width: 85vw;
+    align-items: center;
+  }
+  .line {
+    font-size: 1em;
+    display: none;
+    font-family: 'Oswald', sans-serif;
+  }
+  .wrapper {
+    min-width: calc(100% - 60px);
+    text-align: center;
+    padding-top: 20vh;
+    flex: 1;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    height: 20%;
+    border-top: 1px solid var(--black);
+    padding-left: 1vw;
+    width: 100%;
+    opacity: 85%;
+    font-size: 3.9vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
   
 }
-@media (min-width: 481px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   
 }
-@media (min-width: 768px) {
-  
-}
-@media (min-width: 992px) {
-  
-}
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1919px) {
   
 }
 @media (min-width: 1920px) {
   
 }
-@media (max-width: 480px) {
-  
-}
-@media (max-width: 480px) {
-  
-}
+
 
 
 
