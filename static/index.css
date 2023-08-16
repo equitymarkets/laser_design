@@ -312,7 +312,7 @@ button[type=submit] {
   --gold: #F4EB19; 
   /* --yellow: #F7F02D; */
   --yellow: #F9F8D9; 
-  --backlight: linear-gradient(135deg, var(--white), var(--yellow), var(--white));
+  --backlight: linear-gradient(215deg, var(--white), var(--gold), var(--white));
 }
 
 @media (max-width: 480px) {
@@ -379,6 +379,7 @@ button[type=submit] {
     width: auto;
     align-items: center;
     margin: 6vw;
+    border: 2px solid black;
   }
   #frame {
     text-align: center;
@@ -406,7 +407,6 @@ button[type=submit] {
     background-color: var(--dark-gray);
     color: var(--white);
     height: 20%;
-    border-top: 1px solid var(--black);
     padding-left: 1vw;
     width: 100%;
     opacity: 85%;
@@ -486,6 +486,7 @@ button[type=submit] {
     height: 90vh;
     width: 85vw;
     align-items: center;
+    margin-top: 3vh;
   }
   .line {
     font-size: 1em;
@@ -507,7 +508,6 @@ button[type=submit] {
     background-color: var(--dark-gray);
     color: var(--white);
     height: 20%;
-    border-top: 1px solid var(--black);
     padding-left: 1vw;
     width: 100%;
     opacity: 85%;
